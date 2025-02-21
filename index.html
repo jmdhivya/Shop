@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple E-Commerce Website</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: pink;
+    }
+
+    .product-img {
+      height: 200px;
+      object-fit: cover;
+    }
+
+    footer {
+      background-color: #000000;
+      color: white;
+      padding: 10px 0;
+    }
+
+    /* Updated CSS to resize the logo image */
+    .navbar .navbar-brand img {
+      width: 40px; /* Adjust the width as needed */
+      height: auto; /* Keep the aspect ratio intact */
+    }
+    .order-summary {
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header and Navigation -->
+  <header class="bg-dark text-white p-4">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">Electronix Hub</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#cart">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#checkout">Checkout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="text-center py-5 bg-primary text-white">
+    <div class="container">
+      <img src="ecom.jpg" class="card-img-top product-img" alt="ecom">
+      <h1 class="display-4">Welcome to Electronix Hub!</h1>
+      <p>Bringing the best of electronics to your doorstep.</p>
+      <a href="#products" class="btn btn-light btn-lg">Discover Your Perfect Gadget</a>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="container py-5">
+    <h2 class="text-center mb-5">Featured Products</h2>
+    <div class="row">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="smartwatch.jpg" class="card-img-top product-img" alt="Smartwatch">
+          <div class="card-body">
+            <h5 class="card-title">SmartWatch</h5>
+            <p class="card-text">Fitness trackers. Electric chargers. The world is moving toward a digital environment,
+              so these products are constantly in demand.</p>
+            <p class="h5">₹2800</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="671.jpg" class="card-img-top product-img" alt="Portable Projector">
+          <div class="card-body">
+            <h5 class="card-title">Portable Projector</h5>
+            <p class="card-text">It can be carried in a pocket or bag. You can enjoy movies, videos, and games anywhere
+              home, travel, camping, or outdoor settings.</p>
+            <p class="h5">₹6400</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="charger.jpg" class="card-img-top product-img" alt="Charger">
+          <div class="card-body">
+            <h5 class="card-title">Charger</h5>
+            <p class="card-text">A charger is a device that supplies power to recharge a battery in a device like a
+              smartphone, laptop, or tablet</p>
+            <p class="h5">₹600</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 4 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="speaker.jpg" class="card-img-top product-img" alt="Speaker">
+          <div class="card-body">
+            <h5 class="card-title">Speaker</h5>
+            <p class="card-text">A person who speaks, a device that produces sound, and a figure in poetry. </p>
+            <p class="h5">₹800</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 5 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="calculator.jpg" class="card-img-top product-img" alt="Calculator">
+          <div class="card-body">
+            <h5 class="card-title">Calculator</h5>
+            <p class="card-text">A calculator that performs mathematical calculations, such as addition, subtraction.
+            </p>
+            <p class="h5">₹1200</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <!-- Product 6 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="micro oven.jpg" class="card-img-top product-img" alt="micro oven">
+          <div class="card-body">
+            <h5 class="card-title">Micro Oven</h5>
+            <p class="card-text">It heat food using microwaves,a form of electromagnetic radiation</p>
+            <p class="h5">₹7200</p>
+            <a href="#cart" class="btn btn-primary">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <section id="cart" class="container py-5">
+    <h2 class="text-center mb-5">Your Cart</h2>
+    <div class="row">
+      <div class="col-md-8">
+        <div class="list-group">
+          <!-- Cart Item 1 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            SmartWatches
+            <span class="badge bg-primary">₹2800</span>
+          </div>
+          <!-- Cart Item 2 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            Portable Projector
+            <span class="badge bg-primary">₹6400</span>
+          </div>
+          <!-- Cart Item 3 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            Speaker
+            <span class="badge bg-primary">₹800</span>
+          </div>
+          <!-- Cart Item 4 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            Chargers
+            <span class="badge bg-primary">₹600</span>
+          </div>
+          <!-- Cart Item 5 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            Calculator
+            <span class="badge bg-primary">₹1200</span>
+          </div>
+          <!-- Cart Item 6 -->
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            Micro Oven
+            <span class="badge bg-primary">₹7200</span>
+          </div>
+          <div class="container">
+            <h2 class="display-4">Place Your Order</h2>
+            <form id="orderForm">
+                <!-- Select Your Product -->
+                <div class="mb-3">
+                    <label for="product" class="form-label">Select Your Product</label>
+                    <select id="product" class="form-select" onchange="updateCategories()">
+                        <option value="">--Select--</option>
+                        <option value="product">SmartWatches</option>
+                        <option value="product">Portable Projector</option>
+                        <option value="product">Speaker</option>
+                        <option value="product">Charger</option>
+                        <option value="product">Calculator</option>
+                        <option value="product">Micro Oven</option>
+
+                    </select>
+                </div>
+          <!-- Category Selection -->
+          <div class="mb-3" id="categoryContainer" style="display: none;">
+            <label for="category" class="form-label">Select Your Category</label>
+            <select id="category" class="form-select" onchange="updateItems()">
+                <option value="">--Select--</option>
+            </select>
+        </div>
+          <!-- Item Selection -->
+          <div class="mb-3" id="itemsContainer" style="display: none;">
+            <label for="item" class="form-label">Select Your Product</label>
+            <select id="item" class="form-select">
+                <option value="">--Select--</option>
+            </select>
+        </div>
+          <!-- Quantity Selection -->
+          <div class="mb-3">
+            <label for="quantity" class="form-label">Quantity</label>
+            <input type="number" id="quantity" class="form-control" min="1" value="1">
+        </div>
+          <!-- Total Calculation -->
+          <button type="button" class="btn btn-primary" onclick="calculateTotal()">Calculate Total</button>
+          <div class="order-summary">
+              <strong>Total: ₹<span id="totalAmount">0</span></strong>
+          </div>
+        <!-- Order Message -->
+        <div id="orderMessage" class="mt-3 text-success" style="display: none;">
+            Order placed successfully!
+        </div>
+    </div>
+          <div class="col-md-4">
+            <a href="#checkout" class="btn btn-success">Proceed to Checkout</a>
+          </div>
+        </div>
+  </section>
+  <script>
+     // Menu items object
+     const menuItems = {
+                Products: {"Smartwatche": 2800, "Portable Projector": 6400, "Speaker": 800, "Charger": 600, "Calculator": 1200, "Micro Oven": 7200,
+            },
+        // Update items based on category selection
+        function updateItems() {
+            const product = document.getElementById("product").value;
+            const itemSelect = document.getElementById("item");
+            itemSelect.innerHTML = '<option value="">--Select--</option>';
+
+            document.getElementById("itemsContainer").style.display = category ? "block" : "none";
+            if (product && menuItems[product]) {
+                Object.keys(menuItems[product]).forEach(item => {
+                    itemSelect.innerHTML += `<option value="₹{item}" data-price="₹{menuItems[product][item]}">₹{item} - ₹{menuItems[product][item]}</option>`;
+                });
+            }
+        }
+    // Calculate total based on selected item and quantity
+    function calculateTotal() {
+            const selectedItem = document.getElementById("item");
+            const price = selectedItem.options[selectedItem.selectedIndex]?.dataset.price;
+            const quantity = document.getElementById("quantity").value;
+            const totalAmount = price ? price * quantity : 0;
+            document.getElementById("totalAmount").innerText = totalAmount;
+        }
+
+        // Display order message and reset form
+        function placeOrder() {
+            document.getElementById("orderMessage").style.display = "block";
+            setTimeout(() => {
+                document.getElementById("orderMessage").style.display = "none";
+                document.getElementById("orderForm").reset();
+                document.getElementById("totalAmount").innerText = '0';
+            }, 3000); // Reset after 3 seconds
+        }
+    </script>
+
+  <!-- Checkout Section -->
+  <section id="checkout" class="container py-5">
+    <h2 class="text-center mb-5">Checkout</h2>
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Shipping Address</label>
+        <textarea class="form-control" id="address" rows="3" placeholder="Enter your shipping address"></textarea>
+      </div>
+      <div class="mb-3">
+        <label for="payment" class="form-label">Payment Information</label>
+        <input type="text" class="form-control" id="payment" placeholder="Enter your payment details">
+        <select class="form-select" id="paymentMethod" required>
+          <option value="">Choose payment method</option>
+          <option value="creditCard">Credit Card</option>
+          <option value="creditCard">Ready Cash</option>
+          <option value="debitCard">Debit Card</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Complete Purchase</button>
+    </form>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="text-center py-4">
+    <p>&copy; 2025 Electronix Hub | All Rights Reserved</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
